@@ -1,0 +1,23 @@
+nmap <S-Tab> :tabprev<Return>
+nmap <Tab> :tabnext<Return>
+nnoremap ,l <C-I>
+
+nmap <C-p> :set paste<Return>a
+nnoremap <silent> <C-s> :w<Return>
+
+vnoremap p "0[
+
+" Delete without yank
+nnoremap + <C-a>
+nnoremap - <C-x>
+
+" Delete a word backwards
+nnoremap dw vb"_d
+
+" Paste same text repeatedly
+nnoremap <silent> <C-p> "0p<CR>
+" Select all
+nmap <C-a> gg<S-v>G
+
+"Open BuffExplorer
+nmap \\ \be
